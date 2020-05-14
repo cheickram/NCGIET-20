@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - GIET COLLEGE</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fredericka+the+Great|Monoton|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+            /* Dropdown Button */
+        .dropbtn {
+             /*background-color: rgb(228, 169, 7);*/
+            color: rgb(228, 169, 7);
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            min-width: 100%;
+            /*height: 5em;*/
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: rgb(240, 232, 212); color: rgb(228, 169, 7);}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown 
+        .dropdown:hover .dropbtn {background-color: rgb(192, 144, 12);}*/
+
+
+
+        .map-responsive{
+            overflow:hidden;
+            padding-bottom:35%;
+            position:relative;
+            height:0;
+        }
+        .map-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+
+
+        .nav-item:hover .nav-link{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body id="page-top" style="background-color: black;">
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" style="background-color: white;" id="mainNav">
+        <div class="container"><a class="nav-link js-scroll-trigger" href="#home"><img src="assets/img/logo-base.png" alt="Nature" class="responsive" max-width="150" height="70"></a><button style="background-color: #550303;" data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto text-uppercase" style="text-align: center;">
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#home" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px;">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#dates" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px">Dates</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#guidelines" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px">Guidelines</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#venue" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px">Venue</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact" style="color: rgb(228, 169, 7); font-size:larger; font-family: 'Bangers', cursive; padding-top: 0px; padding-bottom: 0px">Contact Us</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li> -->
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team"></a></li> -->
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#team">Paper Submission</a></li> -->
+                        
+                    <li class="nav-item dropdown" role="presentation">
+                        <a class="nav-link dropbtn" style="font-size:larger; font-family: 'Bangers', cursive; color: rgb(228, 169, 7);">
+                            Important Links
+                        </a>
+                        <div class="dropdown-content" >
+                            <a class="dropdown-item" href="https://forms.gle/D5MeazxJbdj4uLEs8" target="_blank" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Registrations for Conference</a>
+                            <a class="dropdown-item" href="https://forms.gle/zkMinqqhGPweb8Ur8" target="_blank" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Registrations for Workshop</a>
+                            <!-- <a class="dropdown-item" href="https://forms.gle/HgJhJxwwUTAFp2ng9" target="_blank" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Paper Submission</a> -->
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#myModal" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Call For Papaers</a>
+                            <a class="dropdown-item" href="" data-toggle="modal" data-target="#myModal1" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Publishers</a>
+                            <a class="dropdown-item" href="assets/ncgiet.pdf" target="_blank" style="color: rgb(228, 169, 7); padding-top: 5px; padding-bottom: 5px">Brochure</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- padding-bottom: 50%; -->
+    <header class="masthead" style="background-image:url('assets/img/bgd.jpg'); margin-top: 5%;">
+        <div class="container" id="home">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase" style="font-family: 'Fredericka the Great', cursive; margin-top: 122px;"><span class="">NCGIET'20</span></div>
+                <span style="font-size: large;"> 
+                    "On Global Innovations in Engineering and Technology" <br>
+                    <span style="font-size: large;">On 20th and 21th March 2020</span><br><br>
+                    <!-- <span style="font-size: large;">At GODAVARI INSTITUTE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS)</span><br><br> -->
+                </span>
+                <div class="intro-lead-in"> <span class="typing" style="font-family: 'Bangers', cursive;"></span></div>
+                <span style="font-family: 'Dancing Script', cursive; font-size: 1.4em; color: rgb(254, 255, 255)" ><strong>" We invoke and enlighten the Techie in you ! "</strong></span> <br><br><br>
+                <span>Register for: </span>
+                <a href="https://forms.gle/D5MeazxJbdj4uLEs8" target="_blank" style="text-decoration: underline; color:rgb(248, 104, 104); margin-top: 5%">Conference</a> Or 
+                <a href="https://forms.gle/zkMinqqhGPweb8Ur8" target="_blank" style="text-decoration: underline; color:rgb(248, 104, 104); margin-top: 5%">Workshop</a> <br>
+                <!-- class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Primary link -->
+                <!-- <h3 style="text-decoration: underline;color: rgba(255, 255, 255, 0.925); text-align:center; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167); font-family: 'Bangers', cursive; margin-top: 1em;">The registration fee for the workshop is:: <strong> 2000 <span>&#8377;</span></strong></h3> -->
+            </div>
+        </div>
+    </header>
+    <section id="about" style="padding: 70px 0;">
+        <div class="container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="row">
+                <div class="col-sm-12 text-center" style="background-color:#92e6ec;"><br>
+                    <h2 class="text-uppercase" style="color: white; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">ABOUT NCGIET-National Conference</h2>
+                    <h3 class="section-subheading" style="font-size: larger;">on Global Innovations in Engineering & Technology</h3>
+                    <h3 class="text-justify section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        &emsp; &emsp; &emsp; The conference will be held at GIET-(AUTONOMOUS) Rajahmundry, East Godavari District,
+                        Andhra Pradesh, India on March 20th & 21th 2020. The aim objective of NCGIET is to
+                        provide a world class platform to present and discuss  all the latest research and
+                        results of researchers related Big Data, IoT, Cyber Security,Information Technology  
+                        and many more.This conference provides opportunities for the different areas 
+                        delegates to exchange new ideas and application experiences face to face, to 
+                        establish business or research relations and to find  global partners for future 
+                        collaboration.  <br>
+                        We hope that the conference results constituted  significant 
+                        contribution to the knowledge in these up to date scientific field.The organizing 
+                        committee of conference is pleased to invite prospective authors to submit their 
+                        original manuscripts to NCGIET'2020.
+                        <br><br>
+                        &emsp; &emsp; &emsp; This prestigious event is organized with a motivation to provide an excellent national
+                        platform for the students,academicians, researchers, engineers & industrial participants
+                        around the world to SHARE their research findings with the global experts. The conference
+                        will be held every year to make it an ideal platform for people to share views and
+                        experiences in Computer Science and Information Technology related areas.
+                    </h3>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 text-center" style="background-color:#92e6ec;"><br>
+                    <h2 class="text-uppercase" style="color: white; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">ABOUT NCGIET Workshop</h2>
+                    <h3 class="section-subheading" style="font-size: larger;">on Cyber Security</h3>
+                    <h3 class="text-justify section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        &emsp; &emsp; &emsp; We would like to propose an Interactive Ethical Hacking workshop at your esteemed college. 
+                        We have wide range of experience in the field of cyber Security also we have organized these workshops 
+                        in 300+ Colleges and to corporate all over the world. 
+ 
+                        This workshop can help the students to a great extent in respect of their doubts in their respective fields, 
+                        as number of students is facing lots of problems in the field of Cyber Security. Also we are interested to 
+                        share our knowledge in the area of Cyber crime as these days there are lots of cases of cyber frauds. 
+                        We are quite sure that this interactive seminar would make the students aware in this particular segment and 
+                        would enhance their existing skills more. 
+                         
+                        Our prime focus and expertise is on training Engineering students, graduates and corporate IT professionals for 
+                        enhancing their skills to bring sustainable 
+                         
+                        Career growth and development in this highly globalized and information porous world. 
+                        We would like you to kindly give our proposal a series thought and give us the dates to conduct this event soon 
+                        as possible.
+                        <br><br>
+                        &emsp; &emsp; &emsp; This prestigious event is organized with a motivation to provide an excellent national
+                        platform for the students,academicians, researchers, engineers & industrial participants
+                        around the world to SHARE their research findings with the global experts. The conference
+                        will be held every year to make it an ideal platform for people to share views and
+                        experiences in Computer Science and Information Technology related areas.
+                        <br><br>
+                        Read more about the NCGIET workshop on Cyber Security <a href="assets/workshop.pdf" target="_blank" style="text-decoration: underline; color:rgb(248, 104, 104); margin-top: 5%">Here.</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="dates" style="padding: 70px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase" style="color: white; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">Important Dates</h2>
+                    <!-- <h2 class="text-uppercase section-heading">Important Dates</h2> -->
+                    <div class="spinner-grow text-muted"></div>
+                    <div class="spinner-grow text-primary"></div>
+                    <div class="spinner-grow text-success"></div>
+                    <div class="spinner-grow text-info"></div>
+                    <div class="spinner-grow text-warning"></div>
+                    <div class="spinner-grow text-danger"></div>
+                    <div class="spinner-grow text-secondary"></div>
+                    <div class="spinner-grow text-dark"></div>
+                    <div class="spinner-grow text-light"></div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row text-center" style="color:#ffffff;">
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="	fa fa-user-plus fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading" style="color:#ffffff;">Registration Deadline</h4>
+                    <p style="color:#ffffff;">Saturday, the 14th March 2020</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-calendar-times-o fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading" style="color:#ffffff;">Submission Deadline</h4>
+                    <p style="color:#ffffff;">Friday, the 28th February 2020</p>
+                </div>
+                <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-microphone fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading" style="color:#ffffff;">Conference Date</h4>
+                    <p style="color:#ffffff;">Friday, the 20th March 2020 <br> Saturday, the 21th March 2020</p>
+                </div>
+            </div><br>
+            <h3 style="text-decoration: underline;color: rgba(255, 255, 255, 0.925); text-align:center; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167); font-family: 'Bangers', cursive;">The registration fee for the workshop is:: <strong> 300 <span>&#8377;</span></strong> and the cost of the book is:: <strong> 500 <span>&#8377;</span></strong></h3>
+        </div>
+    </section>
+
+    <section id="guidelines" style="padding: 70px 0;">
+        <div class="container" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="row">
+                <div class="col-sm-12 " style="background-color:rgb(146, 230, 236);"><br>
+                    <h2 class="text-uppercase" style="text-align:center; color: white; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">Guidelines</h2>
+                    <br><br>
+                    <h3 class="section-heading" style="color:#271111;">RULES AND REGULATIONS (Read Carefully)</h3>
+                    <h3 class="text-left section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        For paper Submission and Publication in NCGIET National Conference: <br>
+                        &emsp; &emsp; &emsp; 01 - All Paper should be the original one and it should not be published in any manner before and after the conference. <br>
+                        &emsp; &emsp; &emsp; 02 - All Authors and Co-authors must inform their respective Dept. Head/Principal/Guide about the paper submission of papers in to NCGIET National Conference. <br>
+                        &emsp; &emsp; &emsp; 03 - All Authors and Co-authors should write the correct affiliation inside the paper. <br>
+                        &emsp; &emsp; &emsp; 04 - The Organizing Committee may not accept the papers submitted after the last date of registration. <br>
+                        &emsp; &emsp; &emsp; 05 - NCGIET accepts each paper for conference after doing the review by three NCGIET Reviewers. <br>
+                        &emsp; &emsp; &emsp; 06 - NCGIET never publishes the author's or co-author's emails online. <br>
+                        &emsp; &emsp; &emsp; 07 - NCGIET cannot add, modify or delete any authors or co-authors name inside the paper after the registration of the paper without the permission of all authors and co-authors present inside the paper. <br>
+                        &emsp; &emsp; &emsp; 08 - NCGIET never publishes any unregistered paper. <br>
+                        &emsp; &emsp; &emsp; 09 - NCGIET is not responsible for identifying the original author or co-author of the paper. The person who submits the paper will be taken as the original author of the paper. <br>
+                        &emsp; &emsp; &emsp; 10 - In any case if NCGIET receives the complaint about the originality of the author and it found to be true the paper will be suspended from the publication immediately. <br>
+                        &emsp; &emsp; &emsp; 11 - NCGIET cannot republish or distribute any suspended paper from the date of suspension. <br> <br>
+                    </h3>
+                    <h3 class="section-heading" style="color:#271111;">ANATOMY OF THE PAPER</h3><br>
+                    <h3 class="text-left section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                            &emsp;&emsp; &emsp; 01 - Abstract <br>
+                            &emsp;&emsp; &emsp; 02 - Introduction <br>
+                            &emsp;&emsp; &emsp; 03 - Related Work <br>
+                            &emsp;&emsp; &emsp; 04 - Your contribution <br>
+                            &emsp;&emsp; &emsp; 05 - Results <br> 
+                            &emsp;&emsp; &emsp; 06 - Conclusion <br> 
+                            &emsp;&emsp; &emsp; 07 - References <br> <br>
+                            &emsp; Copyright form must be scanned and mailed to us. <br> 
+                            &emsp; See the reference <button type="button" class="btn btn-outline-light text-success"><a href="https://docs.google.com/forms/d/e/1FAIpQLScCeWQVcsz85GMAjTZ8snNb0AaStok8k-eWbVbPH09NbtHEnQ/viewform" target="_blank" style="text-decoration: none; color:rgb(4, 194, 153)">here</a></button> <br><br>
+                    </h3>
+
+                    <h3 class="section-heading" style="color:#271111;">PLAGIARISM</h3>
+                    <h3 class="text-left section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                            &emsp;&emsp; &emsp;<strong> NCGIET Policy for Plagiarism</strong> <br>
+                            &emsp;&emsp; &emsp;NCGIET does not allow any form of plagiarism above 30%.
+                    </h3><br>
+
+                    <h3 class="section-heading" style="color:#271111;">AUTHOR GUIDELINES</h3>
+                    <h3 class="text-left section-subheading" style="margin-bottom: 4%; color:#271111; font-size: larger">
+                        &emsp;&emsp; &emsp;<strong>The paper must be as per the IEEE Format only.</strong> <br>
+                        &emsp;&emsp; &emsp;<span style="text-align: justify;">All submitted articles should report original, previously unpublished research results, experimental or theoretical. Articles submitted to the Conference should meet these criteria and must not be under consideration for publication elsewhere. 
+                            Manuscripts should follow the style of the Conference and are subject to both review and editing.</span>
+                    </h3>
+
+                    <h3 class="section-heading" style="color:#271111;">SUBMISSION METHOD</h3>
+                    <h3 class="text-left section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        For paper Submission and Publication in NCGIET National Conference: <br>
+                        &emsp; &emsp; &emsp; 01 - First register yourself by pressing the register button which redirects you to a Google form. 
+                        <button type="button" class="btn btn-outline-light text-info"><a href="https://docs.google.com/forms/d/e/1FAIpQLScCeWQVcsz85GMAjTZ8snNb0AaStok8k-eWbVbPH09NbtHEnQ/viewform" target="_blank" style="text-decoration: none; color:rgb(4, 194, 153)">Register</a></button><br><br> 
+                        &emsp; &emsp; &emsp; 02 - You will then recieve a mail with your Unique Registration Number from our maintainence team. <br>
+                        &emsp; &emsp; &emsp; 03 - Then, click on paper submission tab below the registration tab which redirects you to another Google Form. <br>
+                        &emsp; &emsp; &emsp; 04 - Fill the form and upload your paper in .doc or .pdf format along with Plagiarism check percentage and document of plagiarism. <br>
+                        &emsp; &emsp; &emsp; 05 - Then our maintainence team will undergo the scrutiny procedure and give you the status through your mails. <br>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue" class="bg-light" style="padding: 70px 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase" style="color: rgb(0, 0, 0); text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">Venue</h2><br>
+                    <div class="map-responsive" style="margin-bottom: 0;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.2589939195204!2d81.86612871484321!3d17.059979588275638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a379f6221208cd9%3A0xd719ebacd3af5c58!2sGodavari%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1581566917811!5m2!1sen!2sin" width="600" height="450" frameborder="" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" allowfullscreen=""></iframe>
+                    </div>
+                    <br>
+                    <div>
+                        GODAVARI INSTITUTE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS),<br> 
+                        NH-16, Chaitanya Knowledge City, Rajahmundry, Andhra Pradesh 533296
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal for "Call for papers"-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content" style="background-color: #ffffff; color:rgb(26, 20, 16)">
+        
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h2 class="text-uppercase" style="color: rgb(0, 0, 0); text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">CALL FOR PAPERS</h2>
+                <!-- <h1 class="modal-title">CALL FOR PAPERS</h1> -->
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            
+            <!-- Modal body -->
+                <div class="modal-body">
+                    <h3 class="text-justify section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">&emsp;&emsp; &emsp; &emsp; &emsp;NCGIET is the premier forum for the presentation of new advances and research results in the fields of Computer Science & Engineering. The conference will bring together leading academic scientists, researchers and scholars in the domain of interest from around the world. Topics of interest for submission include, but are not limited to:</h3>
+                    <h3 class="section-heading" style="color:#271111;">Computer Science and Engineering</h3>
+                    <h3 class="text-justify section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        &emsp; &emsp; &emsp; 01 - Artificial Intelligence <br>
+                        &emsp; &emsp; &emsp; 02 - Automation <br>
+                        &emsp; &emsp; &emsp; 03 - Bitcoin Technology <br>
+                        &emsp; &emsp; &emsp; 04 - Blockchain Technology <br>
+                        &emsp; &emsp; &emsp; 05 - Cyber Security <br>
+                        &emsp; &emsp; &emsp; 06 - Computer Networks <br>
+                        &emsp; &emsp; &emsp; 07 - Cryptography <br>
+                        &emsp; &emsp; &emsp; 08 - Digital Signature <br>
+                        &emsp; &emsp; &emsp; 09 - Data Cammunicatios <br>
+                        &emsp; &emsp; &emsp; 10 - Fuzzy Logic <br>
+                        &emsp; &emsp; &emsp; 11 - Heuristic and AI Planning Strategies and Tools <br>
+                        &emsp; &emsp; &emsp; 12 - Hybrid Intelligent Systems <br>
+                        &emsp; &emsp; &emsp; 13 - Global Positioning System <br>
+                        &emsp; &emsp; &emsp; 14 - Global Position Recieveng System <br>
+                        &emsp; &emsp; &emsp; 15 - Information Retrieval <br>
+                        &emsp; &emsp; &emsp; 16 - Intelligent System Architectures <br>
+                        &emsp; &emsp; &emsp; 17 - Knowledge Representation <br>
+                        &emsp; &emsp; &emsp; 18 - Mechatronics <br>
+                        &emsp; &emsp; &emsp; 19 - Multimedia & Cognitive Informatics <br>
+                        &emsp; &emsp; &emsp; 20 - Neural Networks <br>
+                        &emsp; &emsp; &emsp; 21 - Parallel Processing <br>
+                        &emsp; &emsp; &emsp; 22 - Pattern Recognition <br>
+                        &emsp; &emsp; &emsp; 23 - Robotics <br><br>
+                        &emsp; &emsp; &emsp; and many more ... <br>
+                    </h3>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal for "Publishers"-->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background-color: #ffffff; color:rgb(26, 20, 16)">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h2 class="text-uppercase" style="color: rgb(0, 0, 0); text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">PUBLISHERS</h2>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h3 class="section-heading" style="color:#271111;">UGC equivalent journals</h3>
+                    <h3 class="text-justify section-subheading" style="margin-bottom: 2%; color:#271111; font-size: larger">
+                        &emsp; &emsp; &emsp; International Journal for Modern Trends in Science and Technology (IJMTST: ISSN 2455-3778) <br>
+                        Website: <a href="https://www.ijmtst.com" style="color: #550303;" target="_blank">www.ijmtst.com</a> <br> 
+                    </h3>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" style="background-image:url('assets/img/map-image.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase" style="color: white; text-shadow: 1px 1px 2px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 5px rgb(212, 231, 167);">Contact Us</h2>
+                </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-3 text-center"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Satya Krupa</h4>
+                    <p style="color: #ffffff;">(+91) 95 53 995 198</p>
+                </div>
+                <div class="col-md-3 text-center"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Prasanna Kumar</h4>
+                    <p style="color: #ffffff;">(+91) 93 81 796 435</p>
+                </div>
+                <div class="col-md-3 text-center"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Mounika V.</h4>
+                    <p style="color: #ffffff;">(+91) 63 00 514 944</p>
+                </div>
+                <div class="col-md-3 text-center"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i></span>
+                    <h4 class="section-heading">Abhisshek Sai</h4>
+                    <p style="color: #ffffff;">(+91) 79 81 692 002</p>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-12"> -->
+                    <!-- <form id="contactForm" name="contactForm" novalidate="novalidate" action="https://docs.google.com/forms/d/1xbLDAveKS1uNkJuu2df7jyhgAoBXf7kuch2yEnFqVS4/edit">
+                        <div class="form-row">
+                            <div class="col col-md-6">
+                                <div class="form-group"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col">
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button></div>
+                        </div>
+                    </form> -->
+
+                    
+
+                <!-- </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="team" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/2.jpg">
+                        <h4>Cheick-Raimane SORO</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/cheick-raïmane-soro-136161188" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/cheickraimane.soro" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/CheickRaimane" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4"></div>
+                <!-- <div class="col-sm-4">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/1.jpg">
+                        <h4>Ravi SHANKAR</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member"><img class="rounded-circle mx-auto" src="assets/img/team/3.jpg">
+                        <h4>Abhishek Sai DATTA</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/abhishek-tallapragada-883378187" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100008943241948" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/Abhisshek5" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/clients/creative-market.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/clients/designmodo.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/clients/envato.jpg"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="#"><img class="img-fluid d-block mx-auto" src="assets/img/clients/themeforest.jpg"></a></div>
+            </div>
+        </div>
+    </section> -->
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© GIET 2020</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/nc.giet"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+   
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.typing', {
+            strings: [' ','NCGIET is ', 'A National Level Conference ', 'on Global Innovations in Engineering and Technology','That Will Be Held On 20th and 21th March 2020', ' At GODAVARI INSTITUTE OF ENGINEERING AND TECHNOLOGY (AUTONOMOUS)', 'NH-16, Chaitanya Knowledge City, Rajahmundry, Andhra Pradesh 533296'],
+            smartBackspace: true, // Default value
+            typeSpeed: 50,
+            backSpeed: 20,
+            loop: true
+        });
+    </script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
